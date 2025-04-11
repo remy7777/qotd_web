@@ -1,79 +1,239 @@
 [
-    { "quote": "You miss 100% of the shots you dont take. - Wayne Gretzky - Michael Scott" },
-    { "quote": "Museum of failure or gallery of trying?" },
-    { "quote": "The magic you are looking for is in the work." },
-    { "quote": "Let everything happen to you: beauty and terror. Just keep going. No feeling is final." },
-    { "quote": "Little by little, the bird makes its nest. - French Proverb" },
-    { "quote": "I think  we start healing by telling the truth." },
-    { "quote": "No man can wear one face to himself and another to the multitude without finally getting bewildered as to which may be true. - Hawthorne" },
-    { "quote": "Isnt is funny how day by day nothing changes, then we look back and everything is different. Its the small decisions we make every day that lead to monumental change." },
-    { "quote": "Effort never betrays you." },
-    { "quote": "You are too invested in how you are perceived that you cannot enjoy living." },
-    { "quote": "The goal is to never allow yourself to get too familiar with how blessed you are. This should ALL continue to be a big deal. Tyrese" },
-    { "quote": "Go for it. Always. Rejection doesnt exist. Its yours or its not before you walk into the room. All you got to do is show up. Thats it. - Pedro Pascal" },
-    { "quote": "To the Most High, thank you for the mountaintops and the valleys, and the incredible journey in between. - Tomi Adeyemi" },
-    { "quote": "God sends me back to earth and Im surprised at how colourful everything is. How did I forget? - Youadan Teddy" },
-    { "quote": "The world produces waves. Surf or drown. You decide. - Vigil Abloh" },
-    { "quote": "Love is never wasted, for its value does not rest upon reciprocity. - C.S. Lewis" },
-    { "quote": "For eternal blessings, appreciate what you have." },
-    { "quote": "Still got some healing to do. - Kendrick Lamar" },
-    { "quote": "Actually, life is beautiful and I do have time." },
-    { "quote": "Let July be July. Let August be August. And let yourself just be even in the uncertainty. You dont have to fix everything." },
-    { "quote": "There is absolutely nothing youre supposed to be doing. You have no more purpose than birds in the sky. Go lots of places." },
-    { "quote": "If I am worth anything later, I am worth something now. For wheat is wheat, even if people think it is grass in the beginning." },
-    { "quote": "Man suffers only because he takes seriously what the gods made for fun." },
-    { "quote": "Trying to define yourself is like trying to bite your own teeth." },
-    { "quote": "The real secret of life - to be completely engaged with what you are doing in the here and now. And instead of calling it work, realise it is play." },
-    { "quote": "Maybe the purpose of life is to have a good day." },
-    { "quote": "You cant give your life more time, so give the time you have left more life." },
-    { "quote": "Why would I complain when God is the greatest." },
-    { "quote": "Remember this - a farmer who plants only a few seeds will get a small crop. But the one who plants generously will get a generous crop. - 2 Corinthians 9:6" },
-    { "quote": "And God is able to bless you abundantly, so that in all things at all times, having all that you need, you will abound in every good work. - 2 Corinthians 9:8" },
-    { "quote": "Does anyone know how to pass the time when nothing brings you joy anymore? Go help somebody and Im so serious." },
-    { "quote": "Good and evil both increase at compound interest. That is why the little decisions you and I make every day are of such infinite importance. The smallest good act today is the capture of a strategic point from which, a few months later, you may be able to go on to victories you never dreamed of." },
-    { "quote": "Be where your feet are." },
-    { "quote": "Things are meant to be used. Paint is meant to stain. Perfume is meant to be sprayed. Candles are meant to be burned. Clothes are meant to be worn. Stop waiting for a good day to use things; use things to have a good day." },
-    { "quote": "But then it passed, as all things do." },
-    { "quote": "Almost dead yesterday, maybe dead tomorrow, but alive, gloriously alive, today. - Robert Jordan" },
-    { "quote": "But we cannot simply sit and stare at our wounds forever." },
-    { "quote": "Life isnt about waiting for the storm to pass, its about learning how to dance in the rain." },
-    { "quote": "I have discovered that what really matters in life more than money, wealth, power and even wisdom is how many people you helped to stand when you had the chance to do so. - Lateef Jakande (Grandad)" },
-    { "quote": "Looking back on love, the only thing that made life worth living. - Kodak Black" },
-    { "quote": "People are people. None of it is intentional. Never attribute to malice what can be attributed to incompetence. Its far more likely that theyre all in their own worlds doing their own thing and we all do it everyday. All of our lives are as complex as everybody elses, nobody knows what everybody else is going through." },
-    { "quote": "You dont become confident by shouting affirmations in the mirror but by having a stack of undeniable proof that you are who you say you are. Outwork your self-doubt." },
-    { "quote": "You dont need to have evrything figured out. Put your best foot forward and go as far as you can. When you reach that point, youll be able to see further." },
-    { "quote": "Practice any art, music, singing, dancing, acting, drawing, painting, sculpting, poetry, fiction, essays, reportage, no matter how well or badly, not to get money and fame but to experience becoming, to find out whats inside of you, to make your soul grow. - Kurt Vonnegut" },
-    { "quote": "Have you ever heard a crackhead say, I have no money, Im not going to smoke today. No. They always find a way. Are you gonna let a crackhead out hustle you today?" },
-    { "quote": "No matter how great the talent or the fforts, some things just take time. You cant produce a baby in one month by getting nine women pregnant. - Warren Buffett" },
-    { "quote": "No one desires evil." },
-    { "quote": "…as long as one continues to use one’s misfortune to one’s advantage in order to feel ‘special’, one will always need that misfortune. - The Courage To Be Disliked" },
-    { "quote": "He should just enter his writing for an award, and if he gets rejected, so be it. If he did, he might grow, or discover that he should pursue something different. That is what changing your current lifestyle is about. - The Courage To Be Disliked" },
-    { "quote": "No matter what has occurred in your life up to this point, it should have no bearing at all on how you live from now on.’ That you, living in the here and now, are the one who determines your own life…Yes, because the past does not exist. - The Courage To Be Disliked" },
-    { "quote": "You notice only your shortcomings because you’ve resolved to not start liking yourself. In order to not like yourself, you don’t see your strong points and focus only on your shortcomings. - The Courage To Be Disliked" },
-    { "quote": "It’s enough to just keep moving in a forward direction, without competing with anyone. And of course, there is no need to compare oneself with others. - The Courage To Be Disliked" },
-    { "quote": "It is as if we are moving through a flat space that has no vertical axis. We do not walk in order to compete with someone. It is in trying to progress past who one is now that there is value. - The Courage To Be Disliked" },
-    { "quote": "First one should ask ‘whose task is this?’ Then do the separation of tasks…delineate up to what point one’s own tasks go and from that point they become another person’s tasks. - The Courage To Be Disliked" },
-    { "quote": "…one simply has to focus on what one can change, rather than what one cannot. This is what I call self-acceptance. - The Courage To Be Disliked" },
-    { "quote": "Life is a series of moments which one lives as if one were dancing, right now, around and around each passing instant. And when one happens to survey one’s surroundings, one realizes, ‘I guess I’ve made it this far’. - The Courage To Be Disliked" },
-    { "quote": "It is enough if one finds fulfilment in the here and now one is dancing. - The Courage To Be Disliked" },
-    { "quote": "It’s because we cast a dim light on our entire lives that we are able to see the past and the future. Or at least we imagine we can. But if one is shining a bright spotlight on here and now, one cannot see the past or the future anymore. - The Courage To Be Disliked" },
-    { "quote": "To shine a spotlight on here and now is to go about doing what one can do now, earnestly and conscientiously. - The Courage To Be Disliked" },
-    { "quote": "Not having objectives or the like is fine. Living earnestly here and now is itself a dance. One must not get too serious…Life is always simple, not something that one needs to get too serious about. - The Courage To Be Disliked" },
-    { "quote": "Life is always complete…The life that ends at the age of twenty and the life that ends at ninety are both complete lives, and lives of happiness…if I live earnestly here and now, those moments will always be complete. - The Courage To Be Disliked" },
-    { "quote": "One lives each complete moment like a dance. There is no need for you to compete with anyone, and one has no use for destinations. As long as you’re dancing, you’ll get somewhere. - The Courage To Be Disliked" },
-    { "quote": "…we don’t have enough courage to be normal. It’s okay to be just as we are. Your place to be is there, without needing to be a special being or outstanding in any way. Let’s accept our ordinary selves, ourselves as everyone else. - The Courage To Be Happy" },
-    { "quote": "So I commend the enjoymeny of life, because there is nothing better for a person under the sun than to eat and drink and be glad. Then joy will accompany them in their toil all the days of the life God has given them under the sun. - Ecclesiasteds 8:15" },
-    { "quote": "I sought the Lord, and He heard me, and delivered me from all my fears. - Psalms 34:4" },
-    { "quote": "He who observes the wind will not sow, and he who regards the clouds will not reap. - Ecclesiastes 11:4" },
-    { "quote": "In the morning sow your seed, and in the evening do not withold your hand; for you do not know which will prosper, either this or that, or whether both alike will be good. - Ecclesiastes 11:6" },
-    { "quote": "...do not worry about your life, what you will eat or drink; nor about your body, what you will put on...look at the birds of the air, for they neither sow nor reap nor gather into barns; yet your heavenly Father feeds them. Are you not of more value than they? - Matthew 6:25-26" },
-    { "quote": "Now if God so clothes the grass on the field, which today is and tomorrow is thrown into the oven, will He not much more clothe you, O you of little faith? - Matthew 6:30" },
-    { "quote": "Idleness makes hours pass slowly and years swiftly. Activity makes the hours short and the years long. - Cesare Pavese" },
-    { "quote": "If you never try, youre already living out your worst case scenario. What if it doesnt work out? Its already not working out!" },
-    { "quote": "It happens small until it happens big." },
-    { "quote": "'Do not be deceived: God cannot be mocked. A man reaps what he sows.' - Galatians 6:7" },
-    { "quote": "'If you think you are too important to help someone, you are only fooling yourself. You are not that important.' - Galatians 6:3" },
-    { "quote": "'Pay careful attention to your own work, for then you will get the satisfaction of a job well done, and you won't need to compare yourself to anyone else. For we are each responsible for our own conduct.' - Galatians 6:4-5" },
-    { "quote": "'So let's not get tired of doing what's good. At just the right time we will reap a harvest of blessing if we do not give up.' - Galatians 6:9" }
-
+  {
+    "quote": "You miss 100% of the shots you dont take. - Wayne Gretzky - Michael Scott"
+  },
+  {
+    "quote": "Museum of failure or gallery of trying?"
+  },
+  {
+    "quote": "The magic you are looking for is in the work."
+  },
+  {
+    "quote": "Let everything happen to you: beauty and terror. Just keep going. No feeling is final."
+  },
+  {
+    "quote": "Little by little, the bird makes its nest. - French Proverb"
+  },
+  {
+    "quote": "I think  we start healing by telling the truth."
+  },
+  {
+    "quote": "No man can wear one face to himself and another to the multitude without finally getting bewildered as to which may be true. - Hawthorne"
+  },
+  {
+    "quote": "Isnt is funny how day by day nothing changes, then we look back and everything is different. Its the small decisions we make every day that lead to monumental change."
+  },
+  {
+    "quote": "Effort never betrays you."
+  },
+  {
+    "quote": "You are too invested in how you are perceived that you cannot enjoy living."
+  },
+  {
+    "quote": "The goal is to never allow yourself to get too familiar with how blessed you are. This should ALL continue to be a big deal. Tyrese"
+  },
+  {
+    "quote": "Go for it. Always. Rejection doesnt exist. Its yours or its not before you walk into the room. All you got to do is show up. Thats it. - Pedro Pascal"
+  },
+  {
+    "quote": "To the Most High, thank you for the mountaintops and the valleys, and the incredible journey in between. - Tomi Adeyemi"
+  },
+  {
+    "quote": "God sends me back to earth and Im surprised at how colourful everything is. How did I forget? - Youadan Teddy"
+  },
+  {
+    "quote": "The world produces waves. Surf or drown. You decide. - Vigil Abloh"
+  },
+  {
+    "quote": "Love is never wasted, for its value does not rest upon reciprocity. - C.S. Lewis"
+  },
+  {
+    "quote": "For eternal blessings, appreciate what you have."
+  },
+  {
+    "quote": "Still got some healing to do. - Kendrick Lamar"
+  },
+  {
+    "quote": "Actually, life is beautiful and I do have time."
+  },
+  {
+    "quote": "Let July be July. Let August be August. And let yourself just be even in the uncertainty. You dont have to fix everything."
+  },
+  {
+    "quote": "There is absolutely nothing youre supposed to be doing. You have no more purpose than birds in the sky. Go lots of places."
+  },
+  {
+    "quote": "If I am worth anything later, I am worth something now. For wheat is wheat, even if people think it is grass in the beginning."
+  },
+  {
+    "quote": "Man suffers only because he takes seriously what the gods made for fun."
+  },
+  {
+    "quote": "Trying to define yourself is like trying to bite your own teeth."
+  },
+  {
+    "quote": "The real secret of life - to be completely engaged with what you are doing in the here and now. And instead of calling it work, realise it is play."
+  },
+  {
+    "quote": "Maybe the purpose of life is to have a good day."
+  },
+  {
+    "quote": "You cant give your life more time, so give the time you have left more life."
+  },
+  {
+    "quote": "Why would I complain when God is the greatest."
+  },
+  {
+    "quote": "Remember this - a farmer who plants only a few seeds will get a small crop. But the one who plants generously will get a generous crop. - 2 Corinthians 9:6"
+  },
+  {
+    "quote": "And God is able to bless you abundantly, so that in all things at all times, having all that you need, you will abound in every good work. - 2 Corinthians 9:8"
+  },
+  {
+    "quote": "Does anyone know how to pass the time when nothing brings you joy anymore? Go help somebody and Im so serious."
+  },
+  {
+    "quote": "Good and evil both increase at compound interest. That is why the little decisions you and I make every day are of such infinite importance. The smallest good act today is the capture of a strategic point from which, a few months later, you may be able to go on to victories you never dreamed of."
+  },
+  {
+    "quote": "Be where your feet are."
+  },
+  {
+    "quote": "Things are meant to be used. Paint is meant to stain. Perfume is meant to be sprayed. Candles are meant to be burned. Clothes are meant to be worn. Stop waiting for a good day to use things; use things to have a good day."
+  },
+  {
+    "quote": "But then it passed, as all things do."
+  },
+  {
+    "quote": "Almost dead yesterday, maybe dead tomorrow, but alive, gloriously alive, today. - Robert Jordan"
+  },
+  {
+    "quote": "But we cannot simply sit and stare at our wounds forever."
+  },
+  {
+    "quote": "Life isnt about waiting for the storm to pass, its about learning how to dance in the rain."
+  },
+  {
+    "quote": "I have discovered that what really matters in life more than money, wealth, power and even wisdom is how many people you helped to stand when you had the chance to do so. - Lateef Jakande (Grandad)"
+  },
+  {
+    "quote": "Looking back on love, the only thing that made life worth living. - Kodak Black"
+  },
+  {
+    "quote": "People are people. None of it is intentional. Never attribute to malice what can be attributed to incompetence. Its far more likely that theyre all in their own worlds doing their own thing and we all do it everyday. All of our lives are as complex as everybody elses, nobody knows what everybody else is going through."
+  },
+  {
+    "quote": "You dont become confident by shouting affirmations in the mirror but by having a stack of undeniable proof that you are who you say you are. Outwork your self-doubt."
+  },
+  {
+    "quote": "You dont need to have evrything figured out. Put your best foot forward and go as far as you can. When you reach that point, youll be able to see further."
+  },
+  {
+    "quote": "Practice any art, music, singing, dancing, acting, drawing, painting, sculpting, poetry, fiction, essays, reportage, no matter how well or badly, not to get money and fame but to experience becoming, to find out whats inside of you, to make your soul grow. - Kurt Vonnegut"
+  },
+  {
+    "quote": "Have you ever heard a crackhead say, I have no money, Im not going to smoke today. No. They always find a way. Are you gonna let a crackhead out hustle you today?"
+  },
+  {
+    "quote": "No matter how great the talent or the fforts, some things just take time. You cant produce a baby in one month by getting nine women pregnant. - Warren Buffett"
+  },
+  {
+    "quote": "No one desires evil."
+  },
+  {
+    "quote": "…as long as one continues to use one’s misfortune to one’s advantage in order to feel ‘special’, one will always need that misfortune. - The Courage To Be Disliked"
+  },
+  {
+    "quote": "He should just enter his writing for an award, and if he gets rejected, so be it. If he did, he might grow, or discover that he should pursue something different. That is what changing your current lifestyle is about. - The Courage To Be Disliked"
+  },
+  {
+    "quote": "No matter what has occurred in your life up to this point, it should have no bearing at all on how you live from now on.’ That you, living in the here and now, are the one who determines your own life…Yes, because the past does not exist. - The Courage To Be Disliked"
+  },
+  {
+    "quote": "You notice only your shortcomings because you’ve resolved to not start liking yourself. In order to not like yourself, you don’t see your strong points and focus only on your shortcomings. - The Courage To Be Disliked"
+  },
+  {
+    "quote": "It’s enough to just keep moving in a forward direction, without competing with anyone. And of course, there is no need to compare oneself with others. - The Courage To Be Disliked"
+  },
+  {
+    "quote": "It is as if we are moving through a flat space that has no vertical axis. We do not walk in order to compete with someone. It is in trying to progress past who one is now that there is value. - The Courage To Be Disliked"
+  },
+  {
+    "quote": "First one should ask ‘whose task is this?’ Then do the separation of tasks…delineate up to what point one’s own tasks go and from that point they become another person’s tasks. - The Courage To Be Disliked"
+  },
+  {
+    "quote": "…one simply has to focus on what one can change, rather than what one cannot. This is what I call self-acceptance. - The Courage To Be Disliked"
+  },
+  {
+    "quote": "Life is a series of moments which one lives as if one were dancing, right now, around and around each passing instant. And when one happens to survey one’s surroundings, one realizes, ‘I guess I’ve made it this far’. - The Courage To Be Disliked"
+  },
+  {
+    "quote": "It is enough if one finds fulfilment in the here and now one is dancing. - The Courage To Be Disliked"
+  },
+  {
+    "quote": "It’s because we cast a dim light on our entire lives that we are able to see the past and the future. Or at least we imagine we can. But if one is shining a bright spotlight on here and now, one cannot see the past or the future anymore. - The Courage To Be Disliked"
+  },
+  {
+    "quote": "To shine a spotlight on here and now is to go about doing what one can do now, earnestly and conscientiously. - The Courage To Be Disliked"
+  },
+  {
+    "quote": "Not having objectives or the like is fine. Living earnestly here and now is itself a dance. One must not get too serious…Life is always simple, not something that one needs to get too serious about. - The Courage To Be Disliked"
+  },
+  {
+    "quote": "Life is always complete…The life that ends at the age of twenty and the life that ends at ninety are both complete lives, and lives of happiness…if I live earnestly here and now, those moments will always be complete. - The Courage To Be Disliked"
+  },
+  {
+    "quote": "One lives each complete moment like a dance. There is no need for you to compete with anyone, and one has no use for destinations. As long as you’re dancing, you’ll get somewhere. - The Courage To Be Disliked"
+  },
+  {
+    "quote": "…we don’t have enough courage to be normal. It’s okay to be just as we are. Your place to be is there, without needing to be a special being or outstanding in any way. Let’s accept our ordinary selves, ourselves as everyone else. - The Courage To Be Happy"
+  },
+  {
+    "quote": "So I commend the enjoymeny of life, because there is nothing better for a person under the sun than to eat and drink and be glad. Then joy will accompany them in their toil all the days of the life God has given them under the sun. - Ecclesiasteds 8:15"
+  },
+  {
+    "quote": "I sought the Lord, and He heard me, and delivered me from all my fears. - Psalms 34:4"
+  },
+  {
+    "quote": "He who observes the wind will not sow, and he who regards the clouds will not reap. - Ecclesiastes 11:4"
+  },
+  {
+    "quote": "In the morning sow your seed, and in the evening do not withold your hand; for you do not know which will prosper, either this or that, or whether both alike will be good. - Ecclesiastes 11:6"
+  },
+  {
+    "quote": "...do not worry about your life, what you will eat or drink; nor about your body, what you will put on...look at the birds of the air, for they neither sow nor reap nor gather into barns; yet your heavenly Father feeds them. Are you not of more value than they? - Matthew 6:25-26"
+  },
+  {
+    "quote": "Now if God so clothes the grass on the field, which today is and tomorrow is thrown into the oven, will He not much more clothe you, O you of little faith? - Matthew 6:30"
+  },
+  {
+    "quote": "Idleness makes hours pass slowly and years swiftly. Activity makes the hours short and the years long. - Cesare Pavese"
+  },
+  {
+    "quote": "If you never try, youre already living out your worst case scenario. What if it doesnt work out? Its already not working out!"
+  },
+  {
+    "quote": "It happens small until it happens big."
+  },
+  {
+    "quote": "'Do not be deceived: God cannot be mocked. A man reaps what he sows.' - Galatians 6:7"
+  },
+  {
+    "quote": "'If you think you are too important to help someone, you are only fooling yourself. You are not that important.' - Galatians 6:3"
+  },
+  {
+    "quote": "'Pay careful attention to your own work, for then you will get the satisfaction of a job well done, and you won't need to compare yourself to anyone else. For we are each responsible for our own conduct.' - Galatians 6:4-5"
+  },
+  {
+    "quote": "'So let's not get tired of doing what's good. At just the right time we will reap a harvest of blessing if we do not give up.' - Galatians 6:9"
+  },
+  {
+    "quote": "'Tell me, what is it you plan to do with your one wild and precious life?'"
+  },
+  {
+    "quote": "The cost of entry is embarrassment. It’s cool to fail - denial is a river."
+  },
+  {
+    "quote": "Would you take £1million if you could never walk again? No? Don’t forget to count your blessings."
+  }
 ]

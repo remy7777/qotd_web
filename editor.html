@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Editor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .file-selector {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+            border: 2px dashed #ccc;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 8px 15px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+        }
+        #quote-list {
+            margin-top: 20px;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+        .quote-item {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+        }
+        .delete-btn {
+            color: red;
+            cursor: pointer;
+        }
+        #editor-ui {
+            display: none; /* Hidden until file is loaded */
+        }
+    </style>
+</head>
+<body>
+    <h1>Quote Editor</h1>
+    
+    <div class="file-selector" id="file-selector">
+        <h3>Load Your quotes.json File</h3>
+        <p>To begin, select your existing quotes.json file:</p>
+        <button id="load-btn">Select quotes.json</button>
+        <p>Don't have one? <a href="#" id="start-new">Start with empty list</a></p>
+    </div>
+    
+    <div id="editor-ui">
+        <div>
+            <textarea id="new-quote" placeholder="Enter a new quote..."></textarea>
+            <button id="add-btn">Add Quote</button>
+        </div>
+        
+        <div id="quote-list">
+            <h3>Current Quotes</h3>
+            <!-- Quotes will appear here -->
+        </div>
+
+        <div>
+            <button id="download-btn">Download quotes.json</button>
+        </div>
+    </div>
+
+    <script>
+        // Load existing quotes
+        let quotes = [];
+        
+        // UI elements
+        const fileSelector = document.getElementById('file-selector');
+        const editorUI = document.getElementById('editor-ui');
+        const loadBtn = document.getElementById('load-btn');
+        const startNewLink = document.getElementById('start-new');
+        
+        // Load quotes from file
+        function loadQuotes() {
+            const fileInput = document.createElement('input');
+            fileInput.type = 'file';
+            fileInput.accept = '.json';
+            
+            fileInput.addEventListener('change', (event) => {
+                const file = event.target.files[0];
+                const reader = new FileReader();
+                
+                reader.onload = (e) => {
+                    try {
+                        quotes = JSON.parse(e.target.result);
+                        fileSelector.style.display = 'none';
+                        editorUI.style.display = 'block';
+                        renderQuotes();
+                    } catch (error) {
+                        alert("Error: This doesn't appear to be a valid quotes.json file.\n" + error);
+                    }
+                };
+                
+                reader.onerror = () => {
+                    alert("Error reading file");
+                };
+                
+                reader.readAsText(file);
+            });
+            
+            fileInput.click();
+        }
+        
+        // Display all quotes
+        function renderQuotes() {
+            const container = document.getElementById('quote-list');
+            container.innerHTML = '<h3>Current Quotes (' + quotes.length + ')</h3>';
+            
+            if (quotes.length === 0) {
+                container.innerHTML += '<p>No quotes yet. Add your first quote above!</p>';
+                return;
+            }
+            
+            quotes.forEach((quote, index) => {
+                const div = document.createElement('div');
+                div.className = 'quote-item';
+                div.innerHTML = `
+                    <span>"${quote.quote}"</span>
+                    <span class="delete-btn" data-index="${index}">✕</span>
+                `;
+                container.appendChild(div);
+            });
+            
+            // Add delete handlers
+            document.querySelectorAll('.delete-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const index = e.target.getAttribute('data-index');
+                    quotes.splice(index, 1);
+                    renderQuotes();
+                });
+            });
+        }
+        
+        // Set up event listeners
+        loadBtn.addEventListener('click', loadQuotes);
+        
+        startNewLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            quotes = [];
+            fileSelector.style.display = 'none';
+            editorUI.style.display = 'block';
+            renderQuotes();
+        });
+        
+        document.getElementById('add-btn').addEventListener('click', () => {
+            const quoteText = document.getElementById('new-quote').value.trim();
+            if (quoteText) {
+                quotes.push({ quote: quoteText });
+                document.getElementById('new-quote').value = '';
+                renderQuotes();
+            }
+        });
+        
+        document.getElementById('download-btn').addEventListener('click', () => {
+            const data = JSON.stringify(quotes, null, 2);
+            const blob = new Blob([data], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'quotes.json';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        });
+    </script>
+</body>
+</html>
