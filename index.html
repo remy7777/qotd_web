@@ -8,8 +8,8 @@
     <style>
         body { 
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            color: #fff;
+            background: linear-gradient(135deg, #0a2e0a, #1a4d1a);
+            color: #e8f5e9;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -24,26 +24,55 @@
             margin-bottom: 20px;
             text-transform: uppercase;
             letter-spacing: 2px;
+            color: #c8e6c9;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
         #quote-container { 
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(0, 50, 0, 0.25);
             padding: 30px;
             border-radius: 12px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 4px 15px rgba(0, 20, 0, 0.4);
             max-width: 600px;
-            backdrop-filter: blur(10px);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(100, 200, 100, 0.1);
         }
         .quote { 
             font-size: 1.8em;
             font-weight: 400;
             margin-bottom: 15px;
+            color: #f1f8e9;
+            line-height: 1.4;
+        }
+        .date-info {
+            font-size: 0.8em;
+            opacity: 0.7;
+            margin-top: 20px;
+            color: #a5d6a7;
+            font-style: italic;
+        }
+        /* Animated leaf decoration */
+        .leaf {
+            position: absolute;
+            opacity: 0.15;
+            z-index: -1;
+            animation: float 15s infinite linear;
+        }
+        @keyframes float {
+            0% { transform: translateY(0) rotate(0deg); }
+            100% { transform: translateY(-100vh) rotate(360deg); }
         }
     </style>
 </head>
 <body>
+    <!-- Decorative leaves -->
+    <div class="leaf" style="left:10%; top:20%; transform:rotate(45deg);">🍃</div>
+    <div class="leaf" style="left:80%; top:30%; transform:rotate(-20deg);">🍃</div>
+    <div class="leaf" style="left:30%; top:70%; transform:rotate(15deg);">🍃</div>
+    
     <h1>Quote of the Day</h1>
     <div id="quote-container">
         <div class="quote" id="quote-text">Loading quote...</div>
+        <div class="date-info" id="date-info"></div>
     </div>
 
     <script>
@@ -62,19 +91,56 @@
             }
         }
 
-        // Display random quote
-        async function displayRandomQuote() {
+        // Get a consistent daily quote
+        function getDailyQuote(quotes) {
+            // Get today's date as a unique seed (YYYY-MM-DD format)
+            const today = new Date();
+            const dateString = today.toISOString().split('T')[0];
+            
+            // Create a simple hash from the date string
+            let hash = 0;
+            for (let i = 0; i < dateString.length; i++) {
+                hash = (hash << 5) - hash + dateString.charCodeAt(i);
+                hash |= 0; // Convert to 32bit integer
+            }
+            
+            // Use the hash to select a quote index
+            const quoteIndex = Math.abs(hash) % quotes.length;
+            return quotes[quoteIndex];
+        }
+
+        // Display today's quote
+        async function displayDailyQuote() {
             const quotes = await fetchQuotes();
             if (quotes.length > 0) {
-                const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-                document.getElementById('quote-text').textContent = `"${randomQuote.quote}"`;
+                const todaysQuote = getDailyQuote(quotes);
+                document.getElementById('quote-text').textContent = `"${todaysQuote.quote}"`;
+
             } else {
                 document.getElementById('quote-text').textContent = "No quotes found";
             }
         }
 
         // Initialise
-        displayRandomQuote();
+        displayDailyQuote();
+
+        // Add more floating leaves dynamically
+        function addLeaves() {
+            const leafChars = ['🍃', '🌿', '🍀'];
+            for (let i = 0; i < 5; i++) {
+                const leaf = document.createElement('div');
+                leaf.className = 'leaf';
+                leaf.textContent = leafChars[Math.floor(Math.random() * leafChars.length)];
+                leaf.style.left = Math.random() * 100 + '%';
+                leaf.style.top = Math.random() * 100 + '%';
+                leaf.style.transform = `rotate(${Math.random() * 360}deg)`;
+                leaf.style.animationDuration = (10 + Math.random() * 20) + 's';
+                leaf.style.animationDelay = (Math.random() * 5) + 's';
+                document.body.appendChild(leaf);
+            }
+        }
+        
+        addLeaves();
     </script>
 </body>
 </html>
