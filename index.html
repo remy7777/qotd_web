@@ -43,10 +43,38 @@
 <body>
     <h1>Quote of the Day</h1>
     <div id="quote-container">
-        <div class="quote">"{{ quote.quote }}"</div>
-        {% if quote.author %}
-            <div class="author">- {{ quote.author }}</div>
-        {% endif %}
+        <div class="quote" id="quote-text">Loading quote...</div>
     </div>
+
+    <script>
+        // Fetch quotes from JSON file
+        async function fetchQuotes() {
+            try {
+                const response = await fetch('./quotes.json');
+                if (!response.ok) {
+                    throw new Error('Failed to load quotes');
+                }
+                const quotes = await response.json();
+                return quotes;
+            } catch (error) {
+                console.error('Error:', error);
+                return [];
+            }
+        }
+
+        // Display random quote
+        async function displayRandomQuote() {
+            const quotes = await fetchQuotes();
+            if (quotes.length > 0) {
+                const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+                document.getElementById('quote-text').textContent = `"${randomQuote.quote}"`;
+            } else {
+                document.getElementById('quote-text').textContent = "No quotes found";
+            }
+        }
+
+        // Initialise
+        displayRandomQuote();
+    </script>
 </body>
 </html>
